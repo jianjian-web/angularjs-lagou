@@ -4,7 +4,8 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function ($
         templateUrl: 'view/main.html'
       }).state('login', {
           url: '/login',
-          templateUrl: 'view/login.html'
+          templateUrl: 'view/login.html',
+          controller: 'loginCtrl'
       })
       $urlRouterProvider.otherwise('login');
 }])
