@@ -1,11 +1,15 @@
 <div class='login-wrap'>
-    <img src="image/background.png" alt="" class='bg-color'>
+    <img src="image/background.png" alt="" class='img-bg'>
     <div class='input-wrap'>
-        <div>
-            <label>姓名：</label><input type="text" ng-model="name">
+        <div class='input-item'>
+            <label>姓名：</label><input type="text" ng-model="formData.name">
         </div>
-        <div>
-            <label>密码：</label><input type="text" ng-model="password">
+        <div class='input-item'>
+            <label>密码：</label><input type="password" type="text" ng-model="formData.password">
+        </div>
+        <div class='button-wrap'>
+            <a href="#" ng-click='handleLogin()'>登录</a>
+            <a href="#" ng-click='handleReset()'>重置</a>
         </div>
     </div>
 </div>
