@@ -1,0 +1,31 @@
+.position-list-wrap{
+	// border:1px solid red;
+	overflow-y: auto;
+	height: calc(~'100vh - 40px - 40px');
+	.list-item{
+		border-bottom:1px solid #E8E6E6;
+		height: 61px;
+		display: flex;
+		.img-wrap{
+			width: 60px;
+			height: 60px;
+			.item-img{
+				width:100%;
+				height: 100%;
+			}
+		}
+		.item-container{
+			flex:1;
+			display: flex;
+			flex-direction: column;
+			margin-left:10px;
+			.item-title{
+				font-size: 17px;
+				font-weight: 700;
+			}
+			.font-color{
+				color:#A19E9F;
+			}
+		}
+	}
+}
