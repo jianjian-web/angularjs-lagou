@@ -1,5 +1,5 @@
 <div class='position-list-wrap'>
-		<div class='list-item' ng-repeat="item in data">
+		<div class='list-item' ng-repeat="item in data" ui-sref='position({id: item.id})'>
 			<div class='img-wrap'>
 					<img ng-src="{{item.imgSrc}}" class='item-img'>
 			</div>

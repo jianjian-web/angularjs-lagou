@@ -1,6 +1,5 @@
 angular.module('app').controller('mainCtrl', ['$scope', '$state', function ($scope,$state) {
 	console.log('mainmian')
-	console.dir(JSON.parse($state.params.param))
 	$scope.list = [
 		{
 			id: '1',
