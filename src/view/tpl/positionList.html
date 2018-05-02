@@ -1,12 +1,12 @@
 <div class='position-list-wrap'>
-		<div class='list-item' ng-repeat="item in data" ui-sref='position({id: item.id})'>
+		<div class='list-item' ng-repeat="item in data | filterJob: key" ui-sref='position({id: item.id})' ng-click='handleListClick(item)'>
 			<div class='img-wrap'>
-					<img ng-src="{{item.imgSrc}}" class='item-img'>
+					<img ng-src="{{item.imageUrl}}" class='item-img'>
 			</div>
 			<div class='item-container'>
-					<p class='item-title' ng-bind='item.name'></p>
-					<p class='font-color'>{{item.companyName}} [{{item.city}}] {{industry}}</p>
-					<p class='font-color' ng-bind='item.time'></p>
+					<p class='item-title' ng-bind='item.job'></p>
+					<p class='font-color'>{{item.companyName}} [{{item.cityName}}] {{item.industryName}}</p>
+					<p class='font-color' ng-bind='item.date'></p>
 			</div>
 		</div>
 </div>

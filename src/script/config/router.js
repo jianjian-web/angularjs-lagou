@@ -11,6 +11,14 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',function ($
           url: '/position/:id',
           templateUrl: 'view/position.html',
           controller: 'positionCtrl'
-      })
+      }).state('search', {
+        url: '/search',
+        templateUrl: 'view/search.html',
+        controller: 'searchCtrl'
+    }).state('me', {
+        url: '/me',
+        templateUrl: 'view/me.html',
+        controller: 'meCtrl'
+    })
       $urlRouterProvider.otherwise('login');
 }])

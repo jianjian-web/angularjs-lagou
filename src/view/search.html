@@ -1,0 +1,9 @@
+<div class='search-warp'>
+	<div class='search-header'>
+		<span ng-click='keyWord = "";'>取消</span>
+		<input type="text" class='input' placeholder="搜索职位/公司/城市" ng-model="keyWord">
+		<span ng-click="handleSearch()">搜索</span>
+	</div>
+	<div app-position-list data='list' key='keyWord'></div>
+	<div app-footer active='2'></div>
+</div>

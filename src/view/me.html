@@ -1,0 +1,60 @@
+<div class='table-warp'>
+	<div class='table-header-wrap'>
+		<table cellspacing="0">
+				<thead>
+					<tr>
+						<td>
+							合同
+						</td>
+						<td>
+							2017-01
+						</td>
+						<td>
+							2017-02
+						</td>
+						<td>
+							2017-03
+						</td>
+						<td>
+							2017-04
+						</td>
+						<td>
+							2017-05
+						</td>
+						<td>
+							2017-06
+						</td>
+						<td>
+							2017-07
+						</td>
+						<td>
+							2017-08
+						</td>
+						<td>
+							总金额
+						</td>
+						<td>
+							未结算金额
+						</td>
+						<th class="gutter" style="width: 0px; display: none;"></th>
+				</tr>
+				</thead>
+		</table>
+	</div>
+	<table border cellspacing="0">
+		<tr ng-repeat="item in tableData">
+			<td ng-bind='item.name'>合同</td>
+			<td ng-bind='item.t1'></td>
+			<td ng-bind='item.t2'>2017-02</td>
+			<td ng-bind='item.t3'>2017-03</td>
+			<td ng-bind='item.t4'>2017-04</td>
+			<td ng-bind='item.t5'>2017-05</td>
+			<td ng-bind='item.t6'>2017-06</td>
+			<td ng-bind='item.t7'>2017-07</td>
+			<td ng-bind='item.t8'>2017-08</td>
+			<td ng-bind='item.total'>2017-09</td>
+			<td ng-bind='item.no'></td>
+		</tr>
+	</table>
+</div>
+<div app-footer active='3'></div>

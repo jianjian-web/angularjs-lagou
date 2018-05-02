@@ -3,11 +3,8 @@ angular.module('app').directive('appFooter', [function () {
 		restrict: 'AE',
 		replace: true,
 		templateUrl: '../view/tpl/foot.html',
-		controller: function ($scope) {
-			$scope.current = 1
-			$scope.footClick = function (v) {
-				$scope.current = v
-			}
+		scope: {
+			active: '='
 		}
 	}
 }])

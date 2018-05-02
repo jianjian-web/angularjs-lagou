@@ -1,0 +1,28 @@
+.table-warp{
+	.table-header-wrap{
+		th{
+			box-sizing: border-box;
+		}
+	}
+	table{
+		width: 100%;
+		border:0;
+		border-top:1px solid #333;
+		border-left:1px solid #333;
+		overflow: auto;
+		tbody{
+			max-height: 300px;
+		}
+	}
+	tr{
+		&>td{
+			border:0;
+			padding:5px;
+			border-right:1px solid #333;
+			border-bottom:1px solid #333;
+		}
+		&>td:nth-child(1){
+			width: 100px
+		}
+	}
+}
